@@ -3,7 +3,7 @@ using Microsoft.AspNetCore.Hosting;
 
 namespace BookApi
 {
-    public class LambdaEntryPoint : HttpApiV2Server
+    public class LambdaEntryPoint : APIGatewayProxyFunction
     {
         protected override void Init(IWebHostBuilder builder)
         {
