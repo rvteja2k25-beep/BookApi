@@ -10,7 +10,7 @@ namespace BookApi
             services.AddControllers();
         }
 
-        public void Configure(IApplicationBuilder app)
+        public void Configure(IApplicationBuilder app , IWebHostEnvironment env)
         {
             app.UseRouting();
             app.UseEndpoints(endpoints =>
