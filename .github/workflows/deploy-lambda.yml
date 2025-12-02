@@ -1,4 +1,4 @@
-name: Deploy BookApi Lambda (.NET 10)
+name: Deploy BookApi Lambda (.NET 8)
 
 on:
   push:
@@ -14,11 +14,11 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v3
 
-    # 2️⃣ Setup .NET 10
+    # 2️⃣ Setup .NET 8
     - name: Setup .NET
       uses: actions/setup-dotnet@v3
       with:
-        dotnet-version: "10.0.x"
+        dotnet-version: "8.0.x"
 
     # 3️⃣ Install Lambda Tools
     - name: Install Lambda Tools
