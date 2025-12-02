@@ -15,7 +15,3 @@ app.MapControllers();
 // Do NOT call app.Run() in Lambda
 // app.Run();
 
-if (!string.Equals(Environment.GetEnvironmentVariable("AWS_LAMBDA_FUNCTION_NAME"), "true", StringComparison.OrdinalIgnoreCase))
-{
-    app.Run(); // Start local Kestrel server
-}
