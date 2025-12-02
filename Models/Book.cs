@@ -10,5 +10,6 @@ public class Book
  
     public String Author {get;set;} =String.Empty;
     public String Country{get;set;} =String.Empty;
+	
     public bool IsCheckedOut { get; set; }
 }
